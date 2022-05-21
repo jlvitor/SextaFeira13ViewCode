@@ -9,19 +9,33 @@
 /* Begin PBXBuildFile section */
 		CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D12838A62000AF7168 /* AppDelegate.swift */; };
 		CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D32838A62000AF7168 /* SceneDelegate.swift */; };
-		CCC248D62838A62000AF7168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D52838A62000AF7168 /* ViewController.swift */; };
 		CCC248DB2838A62100AF7168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC248DA2838A62100AF7168 /* Assets.xcassets */; };
 		CCC248DE2838A62100AF7168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC248DC2838A62100AF7168 /* LaunchScreen.storyboard */; };
+		CCC248E92838A8EB00AF7168 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248E82838A8EB00AF7168 /* TabBarViewController.swift */; };
+		CCC248EB2838AB8500AF7168 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248EA2838AB8500AF7168 /* HomeViewController.swift */; };
+		CCC248ED2838AB9300AF7168 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248EC2838AB9300AF7168 /* SearchViewController.swift */; };
+		CCC248EF2838ABA200AF7168 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248EE2838ABA200AF7168 /* SearchDetailViewController.swift */; };
+		CCC248F12838ABB000AF7168 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248F02838ABB000AF7168 /* FilterViewController.swift */; };
+		CCC248F32838ABBE00AF7168 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248F22838ABBE00AF7168 /* FriendsViewController.swift */; };
+		CCC248F52838ABD700AF7168 /* FriendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248F42838ABD700AF7168 /* FriendsDetailViewController.swift */; };
+		CCC248F72838ABEB00AF7168 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248F62838ABEB00AF7168 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCC248CE2838A62000AF7168 /* SextaFeira13ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SextaFeira13ViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC248D12838A62000AF7168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC248D32838A62000AF7168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCC248D52838A62000AF7168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCC248DA2838A62100AF7168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC248DD2838A62100AF7168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC248DF2838A62100AF7168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC248E82838A8EB00AF7168 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CCC248EA2838AB8500AF7168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CCC248EC2838AB9300AF7168 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CCC248EE2838ABA200AF7168 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		CCC248F02838ABB000AF7168 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		CCC248F22838ABBE00AF7168 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		CCC248F42838ABD700AF7168 /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
+		CCC248F62838ABEB00AF7168 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +83,14 @@
 		CCC248E52838A7A000AF7168 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CCC248D52838A62000AF7168 /* ViewController.swift */,
+				CCC248E82838A8EB00AF7168 /* TabBarViewController.swift */,
+				CCC248EA2838AB8500AF7168 /* HomeViewController.swift */,
+				CCC248EC2838AB9300AF7168 /* SearchViewController.swift */,
+				CCC248EE2838ABA200AF7168 /* SearchDetailViewController.swift */,
+				CCC248F02838ABB000AF7168 /* FilterViewController.swift */,
+				CCC248F22838ABBE00AF7168 /* FriendsViewController.swift */,
+				CCC248F42838ABD700AF7168 /* FriendsDetailViewController.swift */,
+				CCC248F62838ABEB00AF7168 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -158,9 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCC248D62838A62000AF7168 /* ViewController.swift in Sources */,
+				CCC248F32838ABBE00AF7168 /* FriendsViewController.swift in Sources */,
+				CCC248F12838ABB000AF7168 /* FilterViewController.swift in Sources */,
+				CCC248ED2838AB9300AF7168 /* SearchViewController.swift in Sources */,
+				CCC248F72838ABEB00AF7168 /* SettingsViewController.swift in Sources */,
+				CCC248E92838A8EB00AF7168 /* TabBarViewController.swift in Sources */,
 				CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */,
 				CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */,
+				CCC248EF2838ABA200AF7168 /* SearchDetailViewController.swift in Sources */,
+				CCC248EB2838AB8500AF7168 /* HomeViewController.swift in Sources */,
+				CCC248F52838ABD700AF7168 /* FriendsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
