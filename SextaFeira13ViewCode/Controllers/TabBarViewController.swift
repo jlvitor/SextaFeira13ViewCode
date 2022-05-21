@@ -11,7 +11,19 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(named: "Background")
+        setupTabBar()
         setupTabBarController()
+    }
+    
+    private func setupTabBar() {
+        self.tabBar.isTranslucent = false
+        self.tabBar.itemPositioning = .centered
+        self.tabBar.itemWidth = 40
+        self.tabBar.itemSpacing = 35
+        
+        self.tabBar.tintColor = UIColor(named: "Icon tabBar selected")
+        self.tabBar.unselectedItemTintColor = UIColor(named: "Icon tabBar unselected")
     }
     
     private func setupTabBarController() {
@@ -22,9 +34,7 @@ class TabBarViewController: UITabBarController {
         let settingsScreen = SettingsViewController()
         
         self.setViewControllers([homeScreen, searchScreen, filterScreen, friendsScreen, settingsScreen], animated: false)
-        self.tabBar.tintColor = .red
-        self.tabBar.unselectedItemTintColor = .white.withAlphaComponent(0.4)
-        
+    
         guard let items = tabBar.items else { return }
         
         items[0].title = "Home"
@@ -42,5 +52,4 @@ class TabBarViewController: UITabBarController {
         items[4].title = "Configurações"
         items[4].image = UIImage(systemName: "gearshape.fill")
     }
-    
 }

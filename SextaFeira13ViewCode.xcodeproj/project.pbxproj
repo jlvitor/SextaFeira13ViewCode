@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCAC8B7A2839793000F145DE /* MovieCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */; };
+		CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */; };
+		CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */; };
+		CCAC8B832839873900F145DE /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7F2839873900F145DE /* MovieData.swift */; };
+		CCAC8B842839873900F145DE /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B802839873900F145DE /* Friends.swift */; };
+		CCAC8B852839873900F145DE /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B812839873900F145DE /* Movies.swift */; };
+		CCAC8B862839873900F145DE /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B822839873900F145DE /* FriendData.swift */; };
 		CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D12838A62000AF7168 /* AppDelegate.swift */; };
 		CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D32838A62000AF7168 /* SceneDelegate.swift */; };
 		CCC248DB2838A62100AF7168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC248DA2838A62100AF7168 /* Assets.xcassets */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewControllerScreen.swift; sourceTree = "<group>"; };
+		CCAC8B7F2839873900F145DE /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		CCAC8B802839873900F145DE /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		CCAC8B812839873900F145DE /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		CCAC8B822839873900F145DE /* FriendData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 		CCC248CE2838A62000AF7168 /* SextaFeira13ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SextaFeira13ViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC248D12838A62000AF7168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC248D32838A62000AF7168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCAC8B772839762B00F145DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC8B782839763100F145DE /* Screens */,
+				CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CCAC8B782839763100F145DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		CCC248C52838A62000AF7168 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +129,8 @@
 		CCC248E62838A7A600AF7168 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CCAC8B772839762B00F145DE /* Cells */,
+				CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +138,10 @@
 		CCC248E72838A7AB00AF7168 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CCAC8B822839873900F145DE /* FriendData.swift */,
+				CCAC8B802839873900F145DE /* Friends.swift */,
+				CCAC8B7F2839873900F145DE /* MovieData.swift */,
+				CCAC8B812839873900F145DE /* Movies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,12 +219,19 @@
 				CCC248F32838ABBE00AF7168 /* FriendsViewController.swift in Sources */,
 				CCC248F12838ABB000AF7168 /* FilterViewController.swift in Sources */,
 				CCC248ED2838AB9300AF7168 /* SearchViewController.swift in Sources */,
+				CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */,
+				CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */,
 				CCC248F72838ABEB00AF7168 /* SettingsViewController.swift in Sources */,
 				CCC248E92838A8EB00AF7168 /* TabBarViewController.swift in Sources */,
 				CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */,
+				CCAC8B862839873900F145DE /* FriendData.swift in Sources */,
 				CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */,
+				CCAC8B7A2839793000F145DE /* MovieCollectionViewCellScreen.swift in Sources */,
+				CCAC8B852839873900F145DE /* Movies.swift in Sources */,
+				CCAC8B832839873900F145DE /* MovieData.swift in Sources */,
 				CCC248EF2838ABA200AF7168 /* SearchDetailViewController.swift in Sources */,
 				CCC248EB2838AB8500AF7168 /* HomeViewController.swift in Sources */,
+				CCAC8B842839873900F145DE /* Friends.swift in Sources */,
 				CCC248F52838ABD700AF7168 /* FriendsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
