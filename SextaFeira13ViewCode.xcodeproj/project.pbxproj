@@ -10,7 +10,6 @@
 		CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D12838A62000AF7168 /* AppDelegate.swift */; };
 		CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D32838A62000AF7168 /* SceneDelegate.swift */; };
 		CCC248D62838A62000AF7168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC248D52838A62000AF7168 /* ViewController.swift */; };
-		CCC248D92838A62000AF7168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC248D72838A62000AF7168 /* Main.storyboard */; };
 		CCC248DB2838A62100AF7168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC248DA2838A62100AF7168 /* Assets.xcassets */; };
 		CCC248DE2838A62100AF7168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC248DC2838A62100AF7168 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		CCC248D12838A62000AF7168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC248D32838A62000AF7168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CCC248D52838A62000AF7168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCC248D82838A62000AF7168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC248DA2838A62100AF7168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC248DD2838A62100AF7168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC248DF2838A62100AF7168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,13 +56,36 @@
 			children = (
 				CCC248D12838A62000AF7168 /* AppDelegate.swift */,
 				CCC248D32838A62000AF7168 /* SceneDelegate.swift */,
-				CCC248D52838A62000AF7168 /* ViewController.swift */,
-				CCC248D72838A62000AF7168 /* Main.storyboard */,
+				CCC248E72838A7AB00AF7168 /* Models */,
+				CCC248E62838A7A600AF7168 /* Views */,
+				CCC248E52838A7A000AF7168 /* Controllers */,
 				CCC248DA2838A62100AF7168 /* Assets.xcassets */,
 				CCC248DC2838A62100AF7168 /* LaunchScreen.storyboard */,
 				CCC248DF2838A62100AF7168 /* Info.plist */,
 			);
 			path = SextaFeira13ViewCode;
+			sourceTree = "<group>";
+		};
+		CCC248E52838A7A000AF7168 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCC248D52838A62000AF7168 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CCC248E62838A7A600AF7168 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCC248E72838A7AB00AF7168 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				CCC248DE2838A62100AF7168 /* LaunchScreen.storyboard in Resources */,
 				CCC248DB2838A62100AF7168 /* Assets.xcassets in Resources */,
-				CCC248D92838A62000AF7168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCC248D72838A62000AF7168 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCC248D82838A62000AF7168 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCC248DC2838A62100AF7168 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +304,6 @@
 				INFOPLIST_FILE = SextaFeira13ViewCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +331,6 @@
 				INFOPLIST_FILE = SextaFeira13ViewCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
