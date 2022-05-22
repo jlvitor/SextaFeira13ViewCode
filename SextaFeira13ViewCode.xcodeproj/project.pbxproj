@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC4687592839B7F800B36522 /* SearchViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */; };
+		CC4687592839B7F800B36522 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4687582839B7F800B36522 /* SearchScreen.swift */; };
+		CC46875B2839DEEB00B36522 /* SearchDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46875A2839DEEB00B36522 /* SearchDetailScreen.swift */; };
+		CC46875D283A086300B36522 /* FriendMovieTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46875C283A086300B36522 /* FriendMovieTableViewCellScreen.swift */; };
+		CC46875F283A0B5500B36522 /* FriendMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46875E283A0B5500B36522 /* FriendMovieTableViewCell.swift */; };
 		CCAC8B7A2839793000F145DE /* MovieCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */; };
 		CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */; };
-		CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */; };
+		CCAC8B7E2839836D00F145DE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7D2839836D00F145DE /* HomeScreen.swift */; };
 		CCAC8B832839873900F145DE /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7F2839873900F145DE /* MovieData.swift */; };
 		CCAC8B842839873900F145DE /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B802839873900F145DE /* Friends.swift */; };
 		CCAC8B852839873900F145DE /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B812839873900F145DE /* Movies.swift */; };
@@ -30,10 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerScreen.swift; sourceTree = "<group>"; };
+		CC4687582839B7F800B36522 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		CC46875A2839DEEB00B36522 /* SearchDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailScreen.swift; sourceTree = "<group>"; };
+		CC46875C283A086300B36522 /* FriendMovieTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMovieTableViewCellScreen.swift; sourceTree = "<group>"; };
+		CC46875E283A0B5500B36522 /* FriendMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMovieTableViewCell.swift; sourceTree = "<group>"; };
 		CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewControllerScreen.swift; sourceTree = "<group>"; };
+		CCAC8B7D2839836D00F145DE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CCAC8B7F2839873900F145DE /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		CCAC8B802839873900F145DE /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		CCAC8B812839873900F145DE /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			children = (
 				CCAC8B782839763100F145DE /* Screens */,
 				CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */,
+				CC46875E283A0B5500B36522 /* FriendMovieTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -78,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */,
+				CC46875C283A086300B36522 /* FriendMovieTableViewCellScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -132,8 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				CCAC8B772839762B00F145DE /* Cells */,
-				CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */,
-				CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */,
+				CCAC8B7D2839836D00F145DE /* HomeScreen.swift */,
+				CC4687582839B7F800B36522 /* SearchScreen.swift */,
+				CC46875A2839DEEB00B36522 /* SearchDetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,15 +228,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC46875B2839DEEB00B36522 /* SearchDetailScreen.swift in Sources */,
 				CCC248F32838ABBE00AF7168 /* FriendsViewController.swift in Sources */,
 				CCC248F12838ABB000AF7168 /* FilterViewController.swift in Sources */,
-				CC4687592839B7F800B36522 /* SearchViewControllerScreen.swift in Sources */,
+				CC4687592839B7F800B36522 /* SearchScreen.swift in Sources */,
 				CCC248ED2838AB9300AF7168 /* SearchViewController.swift in Sources */,
 				CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */,
-				CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */,
+				CCAC8B7E2839836D00F145DE /* HomeScreen.swift in Sources */,
 				CCC248F72838ABEB00AF7168 /* SettingsViewController.swift in Sources */,
 				CCC248E92838A8EB00AF7168 /* TabBarViewController.swift in Sources */,
 				CCC248D22838A62000AF7168 /* AppDelegate.swift in Sources */,
+				CC46875F283A0B5500B36522 /* FriendMovieTableViewCell.swift in Sources */,
+				CC46875D283A086300B36522 /* FriendMovieTableViewCellScreen.swift in Sources */,
 				CCAC8B862839873900F145DE /* FriendData.swift in Sources */,
 				CCC248D42838A62000AF7168 /* SceneDelegate.swift in Sources */,
 				CCAC8B7A2839793000F145DE /* MovieCollectionViewCellScreen.swift in Sources */,

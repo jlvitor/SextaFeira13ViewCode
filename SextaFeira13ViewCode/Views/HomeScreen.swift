@@ -7,12 +7,13 @@
 
 import UIKit
 
-class MovieViewControllerScreen: UIView {
+class HomeScreen: UIView {
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        label.textColor = .label
         label.textAlignment = .center
         label.text = "Lista de Filmes"
         return label
@@ -21,7 +22,6 @@ class MovieViewControllerScreen: UIView {
     lazy var collectionView: UICollectionView = {
         let collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
         collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.backgroundColor = UIColor(named: "Background")
         collection.showsVerticalScrollIndicator = false
         collection.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MovieCollectionViewCell.identifier)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()

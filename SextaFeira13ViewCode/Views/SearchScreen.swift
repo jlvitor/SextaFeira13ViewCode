@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewControllerScreen: UIView {
+class SearchScreen: UIView {
 
     lazy var searchBar: UISearchBar = {
         let bar = UISearchBar()

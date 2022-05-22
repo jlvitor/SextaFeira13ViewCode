@@ -8,11 +8,11 @@
 import Foundation
 
 struct Movie {
-    let id: Int
-    let movieName: String
-    let portraitPoster: String
-    let landscapePoster: String
-    let movieYear: String
-    let movieDescription: String
-    let ageGroup: Int
+    var id: Int
+    var movieName: String
+    var portraitPoster: String
+    var landscapePoster: String
+    var movieYear: String
+    var movieDescription: String
+    var ageGroup: Int
 }

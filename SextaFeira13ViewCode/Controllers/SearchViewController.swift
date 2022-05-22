@@ -9,16 +9,16 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    var screen: SearchViewControllerScreen?
+    var screen: SearchScreen?
     var filteredMovie: [Movie] = movieData.sorted{$0.movieName < $1.movieName}
     var movies: [Movie] = movieData.sorted{$0.movieName < $1.movieName}
     
     override func loadView() {
-        self.screen = SearchViewControllerScreen()
+        self.screen = SearchScreen()
         self.screen?.configProtocols(delegate: self, dataSource: self, searchDelegate: self)
         self.view = self.screen
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,8 +26,9 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
 
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -62,11 +63,21 @@ extension SearchViewController: UISearchBarDelegate {
 //MARK: - UITableViewDelegate
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let row = self.screen?.tableView.indexPathForSelectedRow?.row else { return }
+        guard let row = tableView.indexPathForSelectedRow?.row else { return }
         
-        let vc = SearchDetailViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        let vc: SearchDetailViewController = SearchDetailViewController()
+        let data = self.filteredMovie[row]
+        let movie: Movie = Movie(
+            id: data.id,
+            movieName: data.movieName,
+            portraitPoster: data.portraitPoster,
+            landscapePoster: data.landscapePoster,
+            movieYear: data.movieYear,
+            movieDescription: data.movieDescription,
+            ageGroup: data.ageGroup
+        )
+        vc.movie = movie
+        self.navigationController?.pushViewController(vc, animated: true)
         self.screen?.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
@@ -80,8 +91,6 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = filteredMovie[indexPath.row].movieName
-        cell.backgroundColor = UIColor(named: "Background")
-        
         return cell
     }
 }

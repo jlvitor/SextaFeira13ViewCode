@@ -9,10 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var screen: MovieViewControllerScreen?
+    var screen: HomeScreen?
     
     override func loadView() {
-        self.screen = MovieViewControllerScreen()
+        self.screen = HomeScreen()
         self.screen?.configCollectionViewProtocols(delegate: self, dataSource: self)
         self.view = self.screen
     }

@@ -37,7 +37,7 @@ class MovieCollectionViewCellScreen: UIView {
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = .label
         return label
     }()
 
