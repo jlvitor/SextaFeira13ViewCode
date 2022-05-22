@@ -1,22 +1,30 @@
 //
-//  MovieViewControllerScreen.swift
+//  FilterScreen.swift
 //  SextaFeira13ViewCode
 //
-//  Created by Jean Lucas Vitor on 21/05/22.
+//  Created by Jean Lucas Vitor on 22/05/22.
 //
 
 import UIKit
 
-class HomeScreen: UIView {
+protocol FilterScreenProtocol: AnyObject {
+    func segmentedChanged(_ sender: UISegmentedControl)
+}
+
+class FilterScreen: UIView {
     
-    lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
-        label.textColor = .label
-        label.textAlignment = .center
-        label.text = "Lista de Filmes"
-        return label
+    private weak var delegate: FilterScreenProtocol?
+    
+    func delegate(delegate: FilterScreenProtocol?) {
+        self.delegate = delegate
+    }
+    
+    lazy var segmentedControl: UISegmentedControl = {
+        let segmented = UISegmentedControl(items: ["Maiores de 18", "Menores de 18"])
+        segmented.translatesAutoresizingMaskIntoConstraints = false
+        segmented.selectedSegmentIndex = 0
+        segmented.addTarget(self, action: #selector(segmentedValueChanged(_:)), for: .valueChanged)
+        return segmented
     }()
 
     lazy var collectionView: UICollectionView = {
@@ -40,27 +48,31 @@ class HomeScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func segmentedValueChanged(_ sender: UISegmentedControl) {
+        self.delegate?.segmentedChanged(sender)
+    }
+    
     public func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
         self.collectionView.delegate = delegate
         self.collectionView.dataSource = dataSource
     }
     
     private func addViews() {
-        self.addSubview(self.titleLabel)
+        self.addSubview(self.segmentedControl)
         self.addSubview(self.collectionView)
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            self.segmentedControl.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            self.segmentedControl.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            self.segmentedControl.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             
-            self.collectionView.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 10),
+            self.collectionView.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor, constant: 10),
             self.collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
-    
+
 }
