@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+//MARK: - UICollectionViewDelegateFlowLayout, UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 170, height: 280)
@@ -32,6 +33,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 }
 
+//MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movieData.count

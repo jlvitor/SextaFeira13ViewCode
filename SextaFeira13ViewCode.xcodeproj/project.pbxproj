@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4687592839B7F800B36522 /* SearchViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */; };
 		CCAC8B7A2839793000F145DE /* MovieCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */; };
 		CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */; };
 		CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerScreen.swift; sourceTree = "<group>"; };
 		CCAC8B792839793000F145DE /* MovieCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		CCAC8B7B2839806100F145DE /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewControllerScreen.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				CCAC8B772839762B00F145DE /* Cells */,
 				CCAC8B7D2839836D00F145DE /* MovieViewControllerScreen.swift */,
+				CC4687582839B7F800B36522 /* SearchViewControllerScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				CCC248F32838ABBE00AF7168 /* FriendsViewController.swift in Sources */,
 				CCC248F12838ABB000AF7168 /* FilterViewController.swift in Sources */,
+				CC4687592839B7F800B36522 /* SearchViewControllerScreen.swift in Sources */,
 				CCC248ED2838AB9300AF7168 /* SearchViewController.swift in Sources */,
 				CCAC8B7C2839806100F145DE /* MovieCollectionViewCell.swift in Sources */,
 				CCAC8B7E2839836D00F145DE /* MovieViewControllerScreen.swift in Sources */,
